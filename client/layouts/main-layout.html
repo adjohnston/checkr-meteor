@@ -1,0 +1,19 @@
+<template name="mainLayout">
+
+  <header role="banner">
+    <h1>Checkr</h1>
+
+    <nav role="nav">
+      <a href="{{pathFor 'lists'}}">Lists</a>
+    </nav>
+  </header>
+
+  <main role="main">
+    {{> Template.dynamic template=main}}
+  </main>
+
+  <footer role="contentinfo">
+    <small>Adam Johnston &copy; 2015</small>
+  </footer>
+
+</template>

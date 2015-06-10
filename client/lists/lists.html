@@ -1,0 +1,12 @@
+<template name="lists">
+
+{{#each lists}}
+
+  <section>
+    <h2><a href="{{pathFor '/lists/:slug' slug=slug}}">{{name}}</a></h2>
+    <p>{{desc}}</p>
+  </section>
+
+{{/each}}
+
+</template>
